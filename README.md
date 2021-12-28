@@ -1,4 +1,9 @@
-## Running React on Repl.it
+## Certified Web3 Boy
+
+![Twitter post Loading](https://user-images.githubusercontent.com/65205272/147594652-c920f1d5-accc-4cbd-9ae0-b83af3b34306.png)
+
+
+A project inspired by deverloper dao & Certified lover Boy album this is the smart contact and you can see the website live on https://cwb.mohamedsadiq.repl.co/
 
 [React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
 
