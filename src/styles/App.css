@@ -1,0 +1,648 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: RussoOne;
+  src: url(../fonts/RussoOne-Regular.ttf);
+}
+@font-face {
+  font-family: inter;
+  src: url(../fonts/Inter-Regular.ttf);
+}
+body{
+  background: #FDFAF4
+}
+
+#circles{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 0
+}
+#circles img{
+transform: translate(-50% , -50%);
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#champagnePoetry{
+  width: 300px;
+  height: 300px;
+}
+#ethLinkContainer{
+  margin-top: 20px
+}
+#ethLink{
+  font-family: Roboto;
+  font-variant: small-caps;
+  color:#000
+}
+.mobile_fotter, .desktop_link{
+   font-family: Roboto;
+  font-variant: small-caps;
+  color:#000
+}
+.mobile_number_minted{
+   font-family: Roboto;
+  font-variant: small-caps;
+  color:#000;
+   position: relative;
+   top: -3px;
+}
+.mobile_number_minted p{
+  margin: 0
+}
+.App {
+  position: relative;
+  min-height: 100vh;
+  background-color: #fffcfc;
+  /* overflow: scroll; */ 
+  /* overflow: hidden; */
+}
+
+.container {
+  height: 100%;
+  padding:20px 50px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+.container_footer{
+    padding:0 50px;
+}
+
+.header-container {
+  padding-top: 30px;
+}
+
+.header {
+  margin: 0;
+  font-size: 56px;
+  font-weight: bold;
+}
+.media_links{
+ line-height: 48px
+}
+span strong{
+  font-size: 14px;
+}
+header{
+ width: 100%;
+    height: 50px;
+    font-size: 18px;
+    z-index: 1;
+    position: relative;
+}
+#content{
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 49px;
+}
+#content h1{
+  font-family: RussoOne;
+  font-size: 38px;
+      margin-bottom: 11px;
+}
+#content p{
+  font-family: inter;
+      font-size: 16px;
+    width: 428px;
+    color: #2E2E2E;
+    margin: 0 auto;
+        margin-bottom: 18px;
+}
+#content .cwbImg{
+  width: 319px;
+  margin: 0 auto
+}
+#content .cwbImg img{
+  width: 100%;
+   margin: 0 11px;
+}
+a{
+  color: #000;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out
+}
+a:hover{
+  color:#8b8b8b
+}
+footer{
+  
+   width: 100%;
+    font-family: Roboto;
+    font-variant: small-caps;
+    height: 21px;
+    font-size: 18px;
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    z-index: 1
+}
+footer #numberOfMinting{
+  float: left;
+}
+footer #github{
+  float: right;
+}
+.media_link{
+ margin: 0 13px;
+}
+.media_link:first-child{
+  margin-left: 0
+}
+.media_link:last-child{
+  margin-right: 0
+}
+header #connectedOrNot{
+  font-family: Roboto;
+  font-variant: small-caps;
+  float: right;
+}
+header .media_links{
+  float: left;
+}
+ header .media_links a{
+    font-family: Roboto;
+    font-variant: small-caps;
+ }
+
+.sub-text {
+  font-size: 25px;
+  color: white;
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-button {
+  height: 45px;
+  border: 0;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.connect-wallet-button {
+  background: -webkit-linear-gradient(left, #60c657, #35aee2);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+}
+
+.mint-button {
+  background: -webkit-linear-gradient(left, #a200d6, #ff6fdf);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  margin-right: 15px;
+}
+
+.opensea-button {
+  background-color: rgb(32, 129, 226);
+}
+
+.mint-count {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.twitter-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-text {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* *************************************** buttons general ******************************************/
+
+.mintingButtons{
+  height: 56px;
+  font-size: 16px;
+  padding: 0 41px;
+  color: #fff;
+  border:none;
+  border-radius: 50px;
+  background-color:#000;
+  transition: all 0.3s ease-in-out;
+}
+.mintingButtons:hover{
+  cursor: pointer;
+  background-color: #242424
+}
+.loadingButton{
+  padding: 0 21px;
+  width: 280px
+}
+
+
+.loadingButton_progress{
+background: #000;
+  color: #fff;
+    width: 253px;
+}
+.loadingButton_progress:hover{
+  background: #000;
+  cursor:auto;
+}
+.mode_text_minting,.img_mode{
+ float: left;
+}
+
+.mode_text_minting{
+    line-height: 56px;
+    font-size: 18px;
+   
+    left: 11px;
+    position: relative;
+}
+.img_mode{
+   width: 30%;
+   position: relative;
+}
+.img_mode img{
+     width: 93%;
+    position: absolute;
+    right: 1px;
+    top: -2px;
+}
+/* *************************************** buttons not connceted ******************************************/
+.mode_text_congrats{
+  font-size: 18px
+}
+.congratsButton{
+  padding: 0 26px;
+  background-color:#00611B
+}
+.congratsButton:hover{
+  background: #00611B;
+  cursor: auto;
+}
+.notConnectedButton, .connectedButton{
+  height: 50px;
+  background: transparent;
+  border:2px solid #000;
+  border-radius: 50px;
+  padding: 0 18px;
+}
+
+.notConnectedButton{
+ 
+  transition: all 0.2s ease-in-out
+}
+button{
+  font-family: Roboto;
+   font-variant: small-caps;
+}
+.notConnectedButton:hover{
+  cursor: pointer;
+}
+notConnectedButton span{
+      display: inline-block;
+}
+p#link_track{
+    font-family: Roboto;
+    font-variant: small-caps;
+    font-size: 1.1rem;
+    margin: 0;
+    text-align: center;
+    width: auto;
+    margin-top: 16px;
+    color: #000;
+}
+#link_track svg{
+  position: relative;
+    left: 3px;
+    top: 1px;
+    transition: all 0.2s ease-in-out;
+}
+#link_track:hover svg{
+  opacity: 0.6
+}
+
+.mode_text{
+    text-align: left;
+    width: 74%;
+    font-size: 16px;
+    line-height: 36px;
+}
+.mode_color{
+  width:26%;
+  margin-left: 13px
+}
+.circle{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+  
+}
+.circle_notConnected{
+ background: #FF0404;
+ box-shadow: 0px 0px 12px #FF0404;
+ filter: blur(2px);
+ animation: mymove 1.5s infinite;
+}
+@keyframes mymove {
+  50% {   
+    box-shadow: 0 0 3px 2.5px #ff0000;}
+}
+/* *************************************** buttons  ******************************************/
+
+.connectedButton{
+    display: grid;
+    grid-template-columns: 0.7fr 1.6fr 0.7fr;
+    gap: 0px 0px;
+    line-height: 51px;
+        padding: 0 16px;
+
+        padding-right: 9px;
+}
+.connectedButton:hover{
+  cursor: pointer;
+}
+.connectedButton .mode_text{
+  width:auto;
+  line-height: 48px;
+  text-align: center;
+}
+.circle_Connected{
+ background: #18AA00;
+ box-shadow: 0px 0px 12px #18AA00;
+ filter: blur(2px);
+  animation: dot_green 1.5s infinite;
+}
+
+.drake_face_connected img{
+       width: 28px;
+    position: relative;
+    top: 6px;
+}
+
+
+@keyframes dot_green {
+  50% {   
+       box-shadow: 0px 0px 13px 4px #18aa00;
+    }
+}
+
+.mobile_number_minted, .mobile_fotter{
+  display:none
+}
+
+
+
+.rinkebyAlert{
+    width: 45rem;
+    background-color: #ffe078;
+    position: fixed;
+    bottom: 20px;
+    transform: translate(-50%, 0);
+    left: 50%;
+    border-radius: 12px;
+    padding: 13px 20px;
+    box-shadow: 0px 2px 6px 1px #83838366;
+    transition: all .3s ease-in-out
+}
+.rinkebyAlert_p,.rinkebyAlert_hide{
+  float: left;
+}
+.rinkebyAlert_hide span{
+    margin-left: 12px;
+    background: #fff;
+    padding: 5px 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out
+}
+
+.rinkebyAlert_hide span:hover{
+  background: #eee;
+ 
+}
+.rinkebyAlert_hide span img{
+      width: 11px;
+}
+.img_mode img{
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  animation: drake_face_loading 0.7s ease infinite;
+}
+
+@keyframes drake_face_loading {
+  50% {   
+    top: -4px
+  }
+}
+#circles{
+  animation: circles 4s ease-in-out infinite;
+  transition: all 4s;
+  animation-duration: 30s
+}
+/* .cir_class{
+  animation: circles 4s ease infinite;
+} */
+#cir_class_green{
+  /* animation: circles 5s ease infinite; */
+}
+#cir_class_yellow{
+  /* animation: circles 3s ease infinite; */
+}
+@keyframes circles {
+  0% {   
+     transform: scale(1) rotate(0deg) ;
+  }
+
+  50% {   
+     transform: scale(1.4) rotate(360deg) ;
+  }
+
+  100% {   
+     transform: scale(1) rotate(-360deg) ;
+  }
+  /* 50% {   
+     transform: scale(0.8) rotate(-180deg) ;
+  } */
+  
+}
+
+@media screen and (max-width: 618px) {
+  #content{
+    margin-top: 45px;
+  }
+  #content h1 {
+    font-size: 31px;
+}
+
+#content p {
+   font-size: 15px;
+   text-align: center;
+   width: auto;
+}
+#content .cwbImg {
+    width: 231px;
+}
+ .mobile_number_minted, .mobile_fotter{
+    display: block;
+  }
+  .mobile_fotter{
+   
+     display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."
+    ". . ."; 
+  }
+  .twitter_link{
+    text-align: left
+  }
+  .clb_link{
+    text-align: center
+  }
+  .github_link{
+    text-align: right
+  }
+  .desktop_fotter, .desktop_links{
+    display: none;
+  }
+  .container {
+  
+    padding: 20px 16px;
+}
+.container_footer {
+    padding: 0 16px;
+}
+.notConnectedButton {
+   width: 168px;
+    height: 46px;
+}
+.mode_text {
+    font-size: 15px;
+  }
+  .circle {
+    width: 10px;
+    height: 10px;
+    
+}
+.connectedButton{
+  width:170px;
+  line-height: 44px;
+}
+.drake_face_connected img {
+    width: 28px;
+    left: -2px;
+    top: 6px;
+}
+.notConnectedButton, .connectedButton {
+    height: 51px;
+}
+.connectedButton .mode_text { 
+    line-height: 45px;
+}
+
+}
+
+@media screen and (max-width: 320px) {
+  .mintingButtons {
+    height: 46px;
+    font-size: 15px;
+    padding: 0 25px;
+  
+}
+  #content h1 {
+    font-size: 29px;
+}
+  .mobile_fotter{
+    font-size: 16px
+  }
+.rinkebyAlert {
+    width: 16rem;
+     text-align: center;
+     margin-top: 8px;
+}
+.rinkebyAlert_p{
+  float: none;
+  font-size: 14px;
+}
+.rinkebyAlert_hide span img {
+    width: 8px;
+}
+.rinkebyAlert_hide span{
+   font-size: 14px;
+   margin-left: 0;
+   padding: 6px 24px;
+}
+.rinkebyAlert_hide{
+    float: none;
+  margin-top: 18px
+}
+.mobile_fotter {
+    font-size: 15px;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .mintingButtons {
+    height: 46px;
+    font-size: 15px;
+    padding: 0 25px;
+  
+}
+  #content h1 {
+    font-size: 29px;
+}
+  .mobile_fotter{
+    font-size: 16px
+  }
+.rinkebyAlert {
+    width: 16rem;
+     text-align: center;
+     margin-top: 8px;
+}
+.rinkebyAlert_p{
+  float: none;
+  font-size: 14px;
+}
+.rinkebyAlert_hide span img {
+    width: 8px;
+}
+.rinkebyAlert_hide span{
+   font-size: 14px;
+   margin-left: 0;
+   padding: 6px 24px;
+}
+.rinkebyAlert_hide{
+    float: none;
+  margin-top: 18px
+}
+.mobile_fotter {
+    font-size: 15px;
+}
+}
