@@ -5,6 +5,11 @@
 
 A project inspired by deverloper dao & Certified lover Boy album this is the smart contact and you can see the website live on https://cwb.mohamedsadiq.repl.co/
 
+## Figma files
+![Cadsdspture](https://user-images.githubusercontent.com/65205272/147595032-18317df0-e208-4c74-927e-4804977a6e5d.PNG)
+
+you can check out the figma files if you feel like it here on this link https://www.figma.com/file/x2UkUXmgp69DVE12Yi0CPo/CWB?node-id=23%3A7
+
 [React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
 
 [Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
